@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/kerala2.webp);
+  background-color: rgb(197, 226, 236);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.top {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between left and right sections */
+  padding: 1vw;
+}
+
+.left img {
+  width: 60px; /* Adjusted for responsiveness */
+  height: auto;
+  margin-left: 1%;
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Center buttons vertically */
+}
+
+.right a {
+  margin-left: 20px; /* Adds space between top navigation buttons */
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px 15px; /* Adds padding inside the button */
+  border: 1px solid rgb(12, 12, 12); /* Added border for button effect */
+  border-radius: 14px; /* Rounded corners */
+  display: inline-block; /* Make links behave like buttons */
+}
+
+.right a:first-child {
+  margin-left: 10px; /* Corrected: No left margin for the first button */
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 0;
+  cursor: pointer;
+}
+
+.right a:hover {
+  font-weight: bold;
+}
+
+.report {
+  display: flex;
+  justify-content: right;
+  height: 20vh;
+  margin-right: 120px;
+  align-items: center; /* Center dropdown vertically */
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown content initially */
+}
+
+/* Show dropdown content when the button is hovered */
+.dropdown:hover .dropbtn {
+  background-color: rgb(220, 220, 220); /* Background change on hover */
+  font-weight: bold; /* Font weight change on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: none; /* Ensure content is hidden by default */
+}
+
+.dropbtn {
+  background-color: rgb(225, 225, 225);
+  color: black;
+  height: 8vh;
+  font-size: 25px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+  
+  position: relative; /* Ensure that dropdown-content is positioned correctly */
+}
+
+/* Show dropdown content when the button itself is hovered */
+.dropbtn:hover + .dropdown-content {
+  display: block; /* Display dropdown content on hover of button */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  position: absolute;
+  background-color: rgb(225, 225, 225);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 250px; /* Full width dropdown */
+  display: none; /* Ensure dropdown content is initially hidden */
+}
+
+/* Link styling inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 100px; /* Responsive font size */
+  color: orange;
+  text-shadow: 3px 3px black;
+  margin: 20px 30px; /* Add left margin */
+  text-align: left; /* Align text to the left */
+}
+
+.chatbot {
+  margin: 20px 30px; /* Adds space between buttons */
+  padding: 16px;
+  font-size: 25px;
+  border: 1px solid rgb(220, 220, 220); /* Added border for button effect */
+  border-radius: 14px; /* Rounded corners */
+  display: inline-block; /* Inline-block for consistent button styling */
+  cursor: pointer; /* Pointer cursor for hover effect */
+}
+
+.chatbot:hover {
+  background-color: rgb(220, 220, 220); /* Adds hover effect */
+  font-weight: bold;
+}
+
+.chatbot a {
+  text-decoration: none;
+  color: black;
+ 
+}
+
+.bottom {
+  background-color: rgb(232, 235, 237);
+  height: 134px;
+  width: 100%;
+  padding: 10px;
+  font-size: large;
+  position: fixed; /* Stick to bottom */
+  bottom: 0;
+  align-content: center;
+  padding-left: 30px;
+}
+.bottom a{
+  text-decoration: none;
+  color: black;
+}
+.footer{
+  display:flex
+}
+.footer-left{
+  width: 70vw;
+}
+.footer-right{
+  width: 30vw;
+  justify-content: right;
+  display: flex;
+  margin-right: 120px;
+
+}
+@media (max-width: 1200px) {
+  .top {
+    flex-direction: column; /* Stack the logo and navigation vertically */
+    align-items: center;
+    padding: 2vw;
+  }
+
+  .left img {
+    width: 50px; /* Reduce logo size */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .right {
+    width: 100%; /* Full width */
+    justify-content: center; /* Center the buttons */
+    margin-top: 10px; /* Add margin above the buttons */
+  }
+
+  .right a {
+    margin-left: 10px; /* Reduce space between buttons */
+    font-size: 20px; /* Reduce font size */
+    padding: 8px 10px; /* Adjust padding */
+  }
+
+  .report {
+    flex-direction: column; /* Stack dropdown vertically */
+    align-items: center; /* Center dropdown */
+    height: auto; /* Allow height to adjust automatically */
+    margin-right: 0;
+  }
+
+  .dropdown {
+    width: 50%; /* Full width of the container */
+    max-width: 400px; /* Limit max width for larger screens */
+  }
+
+  .dropbtn {
+    width: 100%; /* Full width button */
+    font-size: 20px; /* Reduce font size */
+  }
+  
+
+  h1 {
+    font-size: 60px; /* Reduce font size */
+    margin: 10px; /* Adjust margins */
+    text-align: center; /* Center align text */
+  }
+
+  .chatbot {
+    width: 50%; /* Adjust width */
+    font-size: 20px; /* Reduce font size */
+    padding: 12px;
+    margin: 10px; /* Adjust margins */
+  }
+
+  .bottom {
+    height: auto;
+    max-height: 100px; /* Allow height to adjust automatically */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .footer {
+    flex-direction: column-reverse; /* Stack footer sections vertically */
+    align-items: center; /* Center align footer items */
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%; /* Full width for footer sections */
+    text-align: center; /* Center align text */
+    margin: 0;
+    justify-content: center; /* Remove margins */
+  }
+  
+}
+@media (max-width: 480px) {
+  .right a {
+    font-size: 18px; /* Further reduce font size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .left img {
+    width: 40px; /* Further reduce logo size */
+  }
+
+  h1 {
+    font-size: 40px; /* Further reduce font size */
+    margin: 5px; /* Adjust margins */
+  }
+
+  .chatbot {
+    font-size: 18px; /* Further reduce font size */
+    padding: 10px;
+    margin: 5px; /* Adjust margins */
+  }
+
+  .dropdown-content {
+    width: 100%; /* Full width of the container */
+  }
+}

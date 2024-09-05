@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(/kerala2.webp);
+    background-color: rgb(197, 226, 236);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  
+  .top {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between left and right sections */
+    padding: 1vw;
+  }
+  
+  .left img {
+    width: 60px; /* Adjusted for responsiveness */
+    height: auto;
+    margin-left: 1%;
+  }
+  
+  .right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center buttons vertically */
+  }
+  
+  .right a {
+    margin-left: 20px; /* Adds space between top navigation buttons */
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 15px; /* Adds padding inside the button */
+    border: 1px solid rgb(12, 12, 12); /* Added border for button effect */
+    border-radius: 14px; /* Rounded corners */
+    display: inline-block; /* Make links behave like buttons */
+  }
+  
+  .right a:first-child {
+    margin-left: 10px; /* Corrected: No left margin for the first button */
+  }
+  
+  button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .right a:hover {
+    font-weight: bold;
+  }
+  .bottom {
+    background-color: rgb(232, 235, 237);
+    height: 134px;
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+   
+    bottom: 0;
+    align-content: center;
+    padding-left: 30px;
+  }
+  .bottom a{
+    text-decoration: none;
+    color: black;
+  }
+  .help{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    min-height: auto;
+   
+    padding: 2px;
+}
+.help form{
+    width: 700px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+form .row{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+}
+.row .column{
+    flex: 1 1 250px;
+}
+.column .title{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.column .input {
+    margin: 15px 0;
+}
+.input input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.input select
+{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+form .btn{
+    width: 100%;
+    padding: 12px;
+    background: #8175d3;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    transition: .5s;
+}
+form .btn:hover{
+    background: #6a5acd;
+}
+img{
+    width: 300px;
+}
+.ask{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+  @media (max-width: 1200px) {
+    .top {
+      flex-direction: column; /* Stack the logo and navigation vertically */
+      align-items: center;
+      padding: 2vw;
+    }
+  
+    .left img {
+      width: 50px; /* Reduce logo size */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .right {
+      width: 100%; /* Full width */
+      justify-content: center; /* Center the buttons */
+      margin-top: 10px; /* Add margin above the buttons */
+    }
+  
+    .right a {
+      margin-left: 10px; /* Reduce space between buttons */
+      font-size: 20px; /* Reduce font size */
+      padding: 8px 10px; /* Adjust padding */
+    }
+  
+  
+  }
+  @media (max-width: 480px) {
+    .right a {
+      font-size: 18px; /* Further reduce font size */
+      padding: 8px; /* Adjust padding */
+    }
+  
+    .left img {
+      width: 40px; /* Further reduce logo size */
+    }
+  }  

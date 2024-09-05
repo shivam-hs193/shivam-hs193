@@ -1,0 +1,21 @@
+body{
+    background-image: url(/kerala2.webp);
+
+}
+
+.box{
+    height: 474px;
+    width: 1015px;
+    background-color: whitesmoke;
+    
+    
+    margin: auto;
+    margin-top: 128px;
+    padding-left: 22px;
+    padding-top: 3px;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+    border-radius: 20px;
+    
+}
